@@ -1,14 +1,15 @@
 import { Ball } from "./Ball.js";
 import { clearCanvas } from "./canvas.js";
+import { balls } from "./setupBalls.js";
 import { drawCloth, drawWood } from "./table.js";
 
 
+drawCloth();
+drawWood();
 
-const b = new Ball({
-    pos: {x: 400, y: 300},
-    vel: {x: 4, y: 1},
-    color: "red",
-});
+balls.forEach((ball) => ball.draw());
+
+/*
 function loop(){
     clearCanvas();
     drawCloth();
@@ -19,3 +20,4 @@ function loop(){
 }
 
 loop();
+*/
