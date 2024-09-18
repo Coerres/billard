@@ -19,19 +19,77 @@ const start = {
 };
 
 const step = {
-    x: 40,
-    y: 20,
+    x: 33,
+    y: 19,
 };
 
-const balls = [
+export const balls = [
     new Ball({
         pos:{
             x: margin + 1/4 * (canvas.width - 2 * margin),
             y: start.y
         },
-        color: COLORS.WHITE
+        color: COLORS.WHITE,
     }),
     new Ball({
         pos: {x: start.x, y: start.y},
-    })
+        color: COLORS.YELLOW,
+    }),
+    new Ball({
+        pos: {x: start.x + step.x, y: start.y - step.y},
+        color: COLORS.BLUE,
+    }),
+    new Ball({
+        pos: {x: start.x + step.x, y: start.y + step.y},
+        color: COLORS.RED,
+    }),
+    new Ball({
+        pos: {x: start.x + 2 * step.x, y: start.y - 2 * step.y},
+        color: COLORS.PURPLE,
+    }),
+    new Ball({
+        pos: {x: start.x + 2 * step.x, y: start.y },
+        color: COLORS.ORANGE,
+    }),
+    new Ball({
+        pos: {x: start.x + 2 * step.x, y: start.y + 2 * step.y},
+        color: COLORS.GREEN,
+    }),
+    new Ball({
+        pos: {x: start.x + 3 * step.x, y: start.y - 3 * step.y},
+        color: COLORS.BROWN,
+    }),
+    new Ball({
+        pos: {x: start.x + 3 * step.x, y: start.y - 1 * step.y},
+        color: COLORS.BLACK,
+    }),
+    new Ball({
+        pos: {x: start.x + 3 * step.x, y: start.y + 1 * step.y},
+        color: COLORS.YELLOW,
+    }),
+    new Ball({
+        pos: {x: start.x + 3 * step.x, y: start.y + 3 * step.y},
+        color: COLORS.BLUE,
+    }),
+    new Ball({
+        pos: {x: start.x + 4 * step.x, y: start.y - 4 * step.y},
+        color: COLORS.RED,
+    }),
+    new Ball({
+        pos: {x: start.x + 4 * step.x, y: start.y - 2 * step.y},
+        color: COLORS.PURPLE,
+    }),
+    new Ball({
+        pos: {x: start.x + 4 * step.x, y: start.y},
+        color: COLORS.ORANGE,
+    }),
+    new Ball({
+        pos: {x: start.x + 4 * step.x, y: start.y + 2 * step.y},
+        color: COLORS.GREEN,
+    }),
+    new Ball({
+        pos: {x: start.x + 4 * step.x, y: start.y + 4 * step.y},
+        color: COLORS.BROWN,
+    }),
+
 ];
