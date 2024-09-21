@@ -93,3 +93,5 @@ export const balls = [
     }),
 
 ];
+
+export const whiteBall = balls.find((b) => b.color == COLORS.WHITE);
